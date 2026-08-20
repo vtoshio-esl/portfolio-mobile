@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { AppNativeStackParamList } from "./AppNativeStackParamList";
 import { HomeScreen } from "../screens/HomeScreen";
 import { SkillsScreen } from "../screens/SkillsScreen";
+import { navigationTheme } from "../themes/PaperTheme";
 
 export type AppStackScreenProps<T extends keyof AppNativeStackParamList> = NativeStackScreenProps<
     AppNativeStackParamList, 
@@ -29,13 +30,12 @@ const AppNativeStack = () => {
                 component={SkillsScreen} 
             />
         </NativeStack.Navigator>
-
     );
 }
 
 export const AppNavigator = () => {
     return (
-        <NavigationContainer>
+        <NavigationContainer theme={navigationTheme}>
             <AppNativeStack />
         </NavigationContainer>       
     )

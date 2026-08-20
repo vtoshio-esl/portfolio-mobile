@@ -3,9 +3,11 @@ import { initialWindowMetrics, SafeAreaProvider } from 'react-native-safe-area-c
 import { PaperProvider } from 'react-native-paper';
 import FlashMessage from 'react-native-flash-message';
 
+import { PaperTheme } from './themes/PaperTheme';
+
 export default function Main() {
   return (
-    <PaperProvider>
+    <PaperProvider theme={PaperTheme}>
       <SafeAreaProvider initialMetrics={initialWindowMetrics}>
           <AppNavigator />
           <FlashMessage position='top'/>
