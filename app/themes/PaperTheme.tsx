@@ -1,15 +1,21 @@
 import { DefaultTheme, Theme } from "@react-navigation/native";
-import { MD3LightTheme, MD3Theme, adaptNavigationTheme } from "react-native-paper";
+import { MD3LightTheme, adaptNavigationTheme } from "react-native-paper";
 
 export const PaperTheme = {
     ...MD3LightTheme,
     colors: {
         ...MD3LightTheme.colors,
-        background: '#FDF0D5',
-        primary: '#669BBC',
-        primaryDark: '#003049',
-        secondary: '#C1121F',
-        secondaryDark: '#780000'
+        primary100: '#EEF6FC',
+        primary200: '#CBE5F6',
+        primary300: '#97CAED',
+        primary400: '#63B0E3',
+
+        secondary100: '#3498DB',
+        secondary200: '#2280BF',
+        secondary300: '#185D8B',
+        secondary400: '#0F3A57',
+
+        background: '#EEF6FC'
     }
 };
 
@@ -22,3 +28,5 @@ export const navigationTheme: Theme = {
     ...DefaultTheme,
     ...LightTheme
 }
+
+export type AppTheme = typeof PaperTheme;

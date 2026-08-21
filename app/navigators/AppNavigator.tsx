@@ -27,7 +27,11 @@ const AppNativeStack = () => {
             />
             <NativeStack.Screen 
                 name="skills" 
-                component={SkillsScreen} 
+                component={SkillsScreen}
+                options={{
+                    headerShown: true,
+                    headerTransparent: true
+                }}
             />
         </NativeStack.Navigator>
     );
