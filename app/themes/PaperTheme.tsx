@@ -14,7 +14,8 @@ export const PaperTheme = {
         secondary200: '#2280BF',
         secondary300: '#185D8B',
         secondary400: '#0F3A57',
-
+        
+        yellow: '#FFED29',
         background: '#EEF6FC'
     }
 };

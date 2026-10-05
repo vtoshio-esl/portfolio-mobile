@@ -38,8 +38,9 @@ export const styles = StyleSheet.create({
   },
 
   jobTitle: {
-    fontSize: 16,
-    fontWeight: 'light',
+    fontSize: 12,
+    letterSpacing: 1.5,
+    fontWeight: '700',
     textAlign: 'center'
   },
 

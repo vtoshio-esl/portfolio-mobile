@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { AppNativeStackParamList } from "./AppNativeStackParamList";
 import { HomeScreen } from "../screens/HomeScreen";
-import { SkillsScreen } from "../screens/SkillsScreen";
+import { SkillsTabsNavigator } from "./TopTabsNavigator";
 import { navigationTheme } from "../themes/PaperTheme";
 
 export type AppStackScreenProps<T extends keyof AppNativeStackParamList> = NativeStackScreenProps<
@@ -27,11 +27,7 @@ const AppNativeStack = () => {
             />
             <NativeStack.Screen 
                 name="skills" 
-                component={SkillsScreen}
-                options={{
-                    headerShown: true,
-                    headerTransparent: true
-                }}
+                component={SkillsTabsNavigator}
             />
         </NativeStack.Navigator>
     );

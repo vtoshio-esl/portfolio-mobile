@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, Linking, ImageBackground, ScrollView } from 'react-native';
+import { View, Text, Image, Linking, ImageBackground } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useTheme } from 'react-native-paper';
@@ -41,10 +41,10 @@ export function HomeScreen({ navigation }: Props) {
               <Text
                 style={[
                   styles.jobTitle, 
-                  { color: theme.colors.primary200 }
+                  { color: theme.colors.primary300 }
                 ]}
               >
-                Desenvolvedor Full-Stack
+                DESENVOLVEDOR FULL-STACK
               </Text>
             </View>
             <Text
