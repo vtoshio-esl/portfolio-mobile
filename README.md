@@ -10,6 +10,6 @@
 
 ## Páginas da Aplicação
 
-![Home page](home.png)
-![Front-end Skills](frontend.png)
-![Back-end Skills](backend.png)
+![Home page](docs/home.png)
+![Front-end Skills](docs/frontend.png)
+![Back-end Skills](docs/backend.png)
